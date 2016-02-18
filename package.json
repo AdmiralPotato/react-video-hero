@@ -1,0 +1,53 @@
+{
+  "name": "react-video-hero",
+  "version": "0.0.1",
+  "description": "A responsive React component for Video \"Hero\" things, optimized for mobile",
+  "main": "lib/react-video-hero.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdmiralPotato/react-video-hero"
+  },
+  "author": "Admiral Potato",
+  "contributors": [
+    {
+      "name": "Admiral Potato",
+      "email": "admiral@nuclearpixel.com",
+      "url": "http://nuclearpixel.com/"
+    },
+    {
+      "name": "Bruce Bolick",
+      "email": "brucebolick@gmail.com"
+    },
+    {
+      "name": "Bryan Smith",
+      "email": "bryan.gsmith33@gmail.com"
+    }
+  ],
+  "scripts": {
+    "buildSimple": "babel ./src --out-dir ./lib --presets react,es2015 --source-maps && node-sass ./src -o ./lib",
+    "build": "webpack && node-sass ./src -o ./lib"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.1.2",
+    "babel-core": "^6.1.19",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-react": "^6.1.2",
+    "node-sass": "^3.4.1",
+    "webpack": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
+  "keywords": [
+    "react",
+    "hero",
+    "video",
+    "responsive",
+    "react-component",
+    "desktop",
+    "mobile"
+  ]
+}
