@@ -57,11 +57,13 @@
 	var ReactDOM = __webpack_require__(3);
 	var VideoHero = __webpack_require__(4);
 	
+	var variationList = [2, 4];
+	var whichOne = variationList[Math.round(Math.random())];
 	var heroProps = {
-		poster: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/glass_fragments-1280-poster.jpg",
+		poster: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/live_for_the_tacos-" + whichOne + "-large-comp-b-1920-poster.jpg",
 		sources: [{
 			type: "video/webm",
-			src: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/glass_fragments-1280.webm"
+			src: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/live_for_the_tacos-" + whichOne + "-large-comp-b-1920.webm"
 		}]
 	};
 	

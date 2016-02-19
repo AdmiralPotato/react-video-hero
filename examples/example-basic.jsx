@@ -2,12 +2,14 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var VideoHero = require('../lib/react-video-hero');
 
+var variationList = [2, 4];
+var whichOne = variationList[Math.round(Math.random())];
 var heroProps = {
-	poster: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/glass_fragments-1280-poster.jpg",
+	poster: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/live_for_the_tacos-"+whichOne+"-large-comp-b-1920-poster.jpg",
 	sources: [
 		{
 			type: "video/webm",
-			src: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/glass_fragments-1280.webm"
+			src: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/live_for_the_tacos-"+whichOne+"-large-comp-b-1920.webm"
 		}
 	]
 };
