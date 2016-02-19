@@ -57,10 +57,54 @@
 	var ReactDOM = __webpack_require__(3);
 	var VideoHero = __webpack_require__(4);
 	
-	ReactDOM.render(React.createElement(VideoHero, {
+	var heroProps = {
 		poster: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/glass_fragments-1280-poster.jpg",
-		sources: [{ type: "video/webm", src: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/glass_fragments-1280.webm" }]
-	}), document.getElementById('example-basic'));
+		sources: [{
+			type: "video/webm",
+			src: "https://raw.githubusercontent.com/AdmiralPotato/react-video-hero-content/master/glass_fragments-1280.webm"
+		}]
+	};
+	
+	ReactDOM.render(React.createElement(
+		VideoHero,
+		heroProps,
+		React.createElement(
+			'div',
+			{ className: 'container-fluid' },
+			React.createElement(
+				'div',
+				{ className: 'row' },
+				React.createElement(
+					'div',
+					{ className: 'col-sm-8 col-sm-offset-2' },
+					React.createElement(
+						'h1',
+						null,
+						React.createElement(
+							'strong',
+							null,
+							'The fastest, easiest way'
+						),
+						React.createElement(
+							'span',
+							null,
+							' to look at motion graphics in hero banners on the internet!'
+						)
+					),
+					React.createElement(
+						'p',
+						null,
+						'New to looking at motion graphics?'
+					),
+					React.createElement(
+						'button',
+						{ className: 'btn' },
+						'Get started'
+					)
+				)
+			)
+		)
+	), document.getElementById('example-basic'));
 
 /***/ },
 /* 2 */

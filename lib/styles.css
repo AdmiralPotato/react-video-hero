@@ -16,5 +16,9 @@
     border: none;
     overflow: hidden;
     min-width: 100%;
-    width: 100%    !important;
-    height: auto   !important; }
+    width: 100%;
+    height: auto; }
+  .VideoHero .children {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
