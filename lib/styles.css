@@ -2,23 +2,20 @@
   position: relative;
   overflow: hidden;
   z-index: -1; }
-  .VideoHero.aspect-16_9 {
-    padding-bottom: 56.25%; }
-  .VideoHero.aspect-4_3 {
-    padding-bottom: 75%; }
-  .VideoHero.aspect-1 {
-    padding-bottom: 100%; }
   .VideoHero video {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     display: block;
     border: none;
-    overflow: hidden;
-    min-width: 100%;
-    width: 100%;
-    height: auto; }
+    overflow: hidden; }
+    .VideoHero video.aspect-16_9 {
+      padding-bottom: 56.25%; }
+    .VideoHero video.aspect-4_3 {
+      padding-bottom: 75%; }
+    .VideoHero video.aspect-1 {
+      padding-bottom: 100%; }
   .VideoHero .children {
-    position: absolute;
-    height: 100%;
-    width: 100%; }
+    position: relative;
+    z-index: 2; }

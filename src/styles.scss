@@ -2,29 +2,26 @@
 	position: relative;
 	overflow: hidden;
 	z-index: -1;
-	&.aspect-16_9{
-		padding-bottom: 9/16 * 100%;
-	}
-	&.aspect-4_3{
-		padding-bottom: 3/4 * 100%;
-	}
-	&.aspect-1{
-		padding-bottom: 100%;
-	}
 	video{
 		position: absolute;
+		z-index: 1;
 		top: 0;
 		left: 0;
 		display: block;
 		border: none;
 		overflow: hidden;
-		min-width: 100%;
-		width: 100%;
-		height: auto;
+		&.aspect-16_9{
+			padding-bottom: 9/16 * 100%;
+		}
+		&.aspect-4_3{
+			padding-bottom: 3/4 * 100%;
+		}
+		&.aspect-1{
+			padding-bottom: 100%;
+		}
 	}
 	.children {
-		position: absolute;
-		height: 100%;
-		width: 100%;
+		position: relative;
+		z-index: 2;
 	}
 }
